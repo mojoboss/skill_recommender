@@ -4,16 +4,18 @@ var stringSimilarity = require("string-similarity");
 var filename = "./jobs.json";
 
 
-var jobsJson = require(filename);
+var jobsJson = require(filename);  //jobsJson is a json object
 //console.log(jobsJson);
 
 //create express app
 var app = express();
-app.get("/", function(req, res){         
+app.get("/:jobtitle", function(req, res){         
+	console.log(req.params.jobtitle);
 	for(var i = 0; i < jobsJson.length; i++) {
-		var obj = jobsJson[i];
+		//var obj = jobsJson[i];
 		//console.log(obj.role);
-		res.write(obj.role + "\n");
+		//res.write(obj.role + "\t" + obj.skills + "\n");
+
 	}
 	
 });
