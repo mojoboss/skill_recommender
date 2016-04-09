@@ -1,0 +1,20 @@
+{
+  "name": "skill_recommender",
+  "version": "1.0.0",
+  "description": "recommends essential skills for a given job profile",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "keywords": [
+    "jobs",
+    "skills",
+    "recommender"
+  ],
+  "author": "mojoboss",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "string-similarity": "^1.0.0"
+  }
+}
